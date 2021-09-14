@@ -1,0 +1,69 @@
+.btn {
+  border-radius: 4px;
+  background: white;
+  padding: 8px;
+  font-size: 16px;
+  margin: 0 8px;
+
+  &-cta {
+    font-size: 26px;
+    line-height: 50px;
+    width: 100%;
+    background: rgb(0, 140, 200);
+    color: white;
+  }
+
+  &-main {
+    background: rgb(0, 140, 200);
+    border-color: rgb(0, 140, 200);
+    color: white;
+  }
+  &-send {
+    background: rgb(0, 80, 200);
+    border-color: rgb(0, 80, 200);
+    color: white;
+  }
+  &-red {
+    background: rgb(200, 80, 80);
+    border-color: rgb(200, 80, 80);
+    color: white;
+  }
+  &-shopify {
+    background: #96bf48;
+    border-color: #96bf48;
+    color: white;
+  }
+
+  .btn-text {
+    opacity: 0.9;
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    top: 150%;
+    left: 50%;
+    margin-left: -60px;
+
+    &:after {
+      content: "";
+      position: absolute;
+      bottom: 100%;
+      left: 50%;
+      margin-left: -5px;
+      border-width: 5px;
+      border-style: solid;
+      border-color: transparent transparent black transparent;
+    }
+  }
+
+  &:hover {
+    .btn-text {
+     visibility: visible;
+   }
+  }
+}

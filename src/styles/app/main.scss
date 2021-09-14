@@ -1,0 +1,90 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow: hidden;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+main {
+  min-height: 100vh;
+  max-height: 100vh;
+  overflow: hidden;
+  background: $backgroundDark;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 80px;
+  color: white;
+  font-size: calc(10px + 2vmin);
+  text-align: center;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+.content-section {
+  height: calc(100vh - 69px);
+  position: relative;
+}
+
+.code-section {
+  position: absolute;
+  width: calc(100% - 700px);
+  min-width: 500px;
+  left: 0;
+  max-height: calc(100vh - 69px);
+  min-height: calc(100vh - 69px);
+  overflow: auto;
+  background: $backgroundDark;
+  border-right: 1px solid rgba(255, 255, 255, 0.4);
+  color: #c9515e;
+  transition: 0.4s ease-in-out left;
+}
+
+.email-previews {
+  display: flex;
+  justify-content: space-around;
+}
+
+.email-section {
+  background: white;
+  min-height: calc(100vh - 69px);
+  max-height: calc(100vh - 69px);
+  transition: 0.4s ease-in-out margin;
+  overflow: auto;
+}
+
+[data-expanded="false"] .code-section {
+  left: -100vw;
+}
+
+[data-expanded="false"] .email-preview {
+  margin: unset;
+  display: inline-block;
+}
+
+.email-preview {
+  margin-left: auto;
+  margin-right: 0;
+  width: 100%;
+  max-width: 700px;
+}
+
+.email-mobile-preview {
+  width: 375px;
+  display: inline-block;
+}
+
+[data-preview-mobile="true"] .email-preview {
+    width: 375px;
+    margin-left: auto;
+    margin-right: 0;
+}

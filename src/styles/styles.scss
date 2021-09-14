@@ -1,0 +1,21 @@
+/*
+* Global Variables
+*/
+$backgroundLight: #ee00ee;
+$backgroundDark: rgb(30, 33, 39);
+$colorWhite: #ffffff;
+$colorBlack: #000000;
+$sectionPadding: 16px;
+$sectionMargins: 16px;
+
+/*
+* Imports Variables
+*/
+@import 'app/main';
+@import 'app/prism';
+@import 'app/text';
+@import 'app/headers';
+@import 'app/buttons';
+@import 'app/spacing';
+
+@import 'components/liquidPopup';
