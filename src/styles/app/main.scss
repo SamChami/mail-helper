@@ -31,6 +31,7 @@ main {
 }
 
 .content-section {
+  background: $backgroundLight;
   height: calc(100vh - 69px);
   position: relative;
 }

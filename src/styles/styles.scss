@@ -3,6 +3,7 @@
 */
 $backgroundLight: #ee00ee;
 $backgroundDark: rgb(30, 33, 39);
+$backgroundLight: rgb(233, 233, 233);
 $colorWhite: #ffffff;
 $colorBlack: #000000;
 $sectionPadding: 16px;
@@ -18,4 +19,5 @@ $sectionMargins: 16px;
 @import 'app/buttons';
 @import 'app/spacing';
 
+@import 'components/templateSelect';
 @import 'components/liquidPopup';
